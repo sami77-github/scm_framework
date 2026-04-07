@@ -7,7 +7,7 @@ import java.util.Properties;
 public class FileUtility_True {
 
 	public String getDataFromProperties(String key) throws IOException {
-		FileInputStream fis = new FileInputStream("");
+		FileInputStream fis = new FileInputStream("./test_data/commonData.properties");
 		Properties prop = new Properties();
 		prop.load(fis);
 		String value = prop.getProperty(key);
