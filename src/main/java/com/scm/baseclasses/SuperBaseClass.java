@@ -33,10 +33,13 @@ public class SuperBaseClass {
 
 		// getting browser either from cmd(jenkins) or suite file or properties file...
 		browser = System.getProperty("browser");
-		if (browser == null) {
+		System.out.println("Browser value from cmd/jenkins: " + browser);
+		if (browser == null || browser.trim().isEmpty()) {
 			browser = test.getParameter("browser");
-			if (browser == null) {
+			System.out.println("Browser value from xml: " + browser);
+			if (browser == null || browser.trim().isEmpty()) {
 				browser = pu.getDataFromProperties("browser");
+				System.out.println("Browser value from properties: " + browser);
 			}
 		}
 		if (browser.equalsIgnoreCase("chrome")) {
@@ -55,9 +58,9 @@ public class SuperBaseClass {
 
 		// getting url either from cmd(jenkins) or suite file or properties file...
 		String url = System.getProperty("url");
-		if (url == null) {
+		if (url == null || url.trim().isEmpty()) {
 			url = test.getParameter("url");
-			if (url == null) {
+			if (url == null || url.trim().isEmpty()) {
 				url = pu.getDataFromProperties("url");
 			}
 		}
@@ -68,7 +71,9 @@ public class SuperBaseClass {
 	@AfterClass(alwaysRun = true)
 	public void afterClassConfigMethod() {
 		// driver.manage().window().minimize();
-		driver.quit();
+		if(driver != null) {
+		    driver.quit();
+		}
 		UtilityClassObject.removerDriver(); // to remove all the local driver instances from thread local...
 		System.out.println("browser closed...");
 	}
