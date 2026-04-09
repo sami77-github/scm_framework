@@ -37,5 +37,6 @@ public class InvalidLoginsTest extends SuperBaseClass {
 		WebElement errorMsg = lp.getErrorMsg();
 		Assert.assertTrue(errorMsg.isDisplayed());
 		System.out.println(errorMsg + " from retailer");
+		System.out.println("done");
 	}
 }
