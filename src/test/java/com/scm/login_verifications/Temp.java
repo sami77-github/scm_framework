@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import com.scm.generic_utilities.FileUtility_True;
 
-public class TempTest {
+public class Temp {
 
 	public static void main(String[] args) throws IOException {
 		FileUtility_True fu = new FileUtility_True();

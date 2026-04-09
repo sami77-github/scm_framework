@@ -100,4 +100,15 @@ public class Login_Page_True {
 		sel.selectByVisibleText("Retailer");
 		getLoginBtn().click();
 	}
+
+	// Invalid logins
+
+	public void invalidLogins(String invalidUsername, String invalidPassword, String VisibleText) {
+		Login_Page_True lp = new Login_Page_True(driver);
+		lp.getUserNameField().sendKeys(invalidUsername);
+		lp.getPasswordField().sendKeys(invalidPassword);
+		Select sel = new Select(loginType);
+		sel.selectByVisibleText(VisibleText);
+		lp.getLoginBtn().click();
+	}
 }
