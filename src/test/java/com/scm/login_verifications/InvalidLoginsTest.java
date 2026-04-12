@@ -36,7 +36,7 @@ public class InvalidLoginsTest extends SuperBaseClass {
 
 		Login_Page_True lp = new Login_Page_True(driver);
 		lp.invalidLogins("tamu", "tamu123", "Retailer");
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		WebElement errorMsg = lp.getErrorMsg();
 		Assert.assertTrue(errorMsg.isDisplayed());
 		System.out.println(errorMsg + " from retailer");

@@ -52,12 +52,7 @@ public class SuperBaseClass {
 		} else if (browser.equalsIgnoreCase("safari")) {
 			driver = new SafariDriver();
 		}
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless=new");
-		options.addArguments("--disable-gpu");
-		options.addArguments("--window-size=1920,1080");
 
-		driver = new ChromeDriver(options);
 		UtilityClassObject.setDriver(driver);
 		driver = UtilityClassObject.getDriver();
 		driver.manage().window().maximize();
@@ -78,8 +73,8 @@ public class SuperBaseClass {
 	@AfterClass(alwaysRun = true)
 	public void afterClassConfigMethod() {
 		// driver.manage().window().minimize();
-		if(driver != null) {
-		    driver.quit();
+		if (driver != null) {
+			driver.quit();
 		}
 		UtilityClassObject.removerDriver(); // to remove all the local driver instances from thread local...
 		System.out.println("browser closed...");
