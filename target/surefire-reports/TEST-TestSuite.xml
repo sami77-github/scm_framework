@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="8.766" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="35.263" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21.0.10\bin"/>
-    <property name="sun.java.command" value="C:\Users\samis\AppData\Local\Temp\surefire18378111569557830018\surefirebooter-20260409210952370_3.jar C:\Users\samis\AppData\Local\Temp\surefire18378111569557830018 2026-04-09T21-09-52_259-jvmRun1 surefire-20260409210952370_1tmp surefire_0-20260409210952370_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\samis\AppData\Local\Temp\surefire13406796641916417332\surefirebooter-20260412143104864_3.jar C:\Users\samis\AppData\Local\Temp\surefire13406796641916417332 2026-04-12T14-31-04_715-jvmRun1 surefire-20260412143104864_1tmp surefire_0-20260412143104864_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\samis\eclipse-workspace\scm-framework\target\test-classes;C:\Users\samis\eclipse-workspace\scm-framework\target\classes;C:\Users\samis\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\samis\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\samis\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\samis\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\samis\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\samis\.m2\repository\org\apache\poi\poi-ooxml\5.4.0\poi-ooxml-5.4.0.jar;C:\Users\samis\.m2\repository\org\apache\poi\poi-ooxml-lite\5.4.0\poi-ooxml-lite-5.4.0.jar;C:\Users\samis\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\samis\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\samis\.m2\repository\org\apache\commons\commons-lang3\3.16.0\commons-lang3-3.16.0.jar;C:\Users\samis\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\samis\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\samis\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\samis\.m2\repository\com\mysql\mysql-connector-j\9.4.0\mysql-connector-j-9.4.0.jar;C:\Users\samis\.m2\repository\com\google\protobuf\protobuf-java\4.31.1\protobuf-java-4.31.1.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-java\4.41.0\selenium-java-4.41.0.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-api\4.41.0\selenium-api-4.41.0.jar;C:\Users\samis\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.41.0\selenium-chrome-driver-4.41.0.jar;C:\Users\samis\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.41.0\selenium-chromium-driver-4.41.0.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-json\4.41.0\selenium-json-4.41.0.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.41.0\selenium-manager-4.41.0.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v143\4.41.0\selenium-devtools-v143-4.41.0.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v144\4.41.0\selenium-devtools-v144-4.41.0.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v145\4.41.0\selenium-devtools-v145-4.41.0.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.41.0\selenium-edge-driver-4.41.0.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.41.0\selenium-firefox-driver-4.41.0.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-http\4.41.0\selenium-http-4.41.0.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.41.0\selenium-ie-driver-4.41.0.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.41.0\selenium-remote-driver-4.41.0.jar;C:\Users\samis\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\samis\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\samis\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\samis\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\samis\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\samis\.m2\repository\io\opentelemetry\opentelemetry-api\1.59.0\opentelemetry-api-1.59.0.jar;C:\Users\samis\.m2\repository\io\opentelemetry\opentelemetry-context\1.59.0\opentelemetry-context-1.59.0.jar;C:\Users\samis\.m2\repository\io\opentelemetry\opentelemetry-common\1.59.0\opentelemetry-common-1.59.0.jar;C:\Users\samis\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.59.0\opentelemetry-exporter-logging-1.59.0.jar;C:\Users\samis\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.59.0\opentelemetry-sdk-common-1.59.0.jar;C:\Users\samis\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.59.0\opentelemetry-sdk-extension-autoconfigure-spi-1.59.0.jar;C:\Users\samis\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.59.0\opentelemetry-sdk-extension-autoconfigure-1.59.0.jar;C:\Users\samis\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.59.0\opentelemetry-sdk-trace-1.59.0.jar;C:\Users\samis\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.59.0\opentelemetry-sdk-1.59.0.jar;C:\Users\samis\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.59.0\opentelemetry-sdk-metrics-1.59.0.jar;C:\Users\samis\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.59.0\opentelemetry-sdk-logs-1.59.0.jar;C:\Users\samis\.m2\repository\net\bytebuddy\byte-buddy\1.18.5\byte-buddy-1.18.5.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-os\4.41.0\selenium-os-4.41.0.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.41.0\selenium-safari-driver-4.41.0.jar;C:\Users\samis\.m2\repository\org\seleniumhq\selenium\selenium-support\4.41.0\selenium-support-4.41.0.jar;C:\Users\samis\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\samis\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\samis\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\samis\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\samis\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\samis\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\samis\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\samis\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\samis\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\samis\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\samis\AppData\Local\Temp\surefire18378111569557830018\surefirebooter-20260409210952370_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\samis\AppData\Local\Temp\surefire13406796641916417332\surefirebooter-20260412143104864_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.10+8-LTS-217"/>
@@ -40,7 +40,6 @@
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="browser" value="chrome"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="localRepository" value="C:\Users\samis\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
@@ -59,41 +58,69 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="verifyAdminLogin" classname="com.scm.login_verifications.VerifyAdminLoginWithValidCredTest" time="0.065">
+  <testcase name="invalidManuloginsTest" classname="com.scm.login_verifications.InvalidLoginsTest" time="0.785">
     <system-out><![CDATA[suit level configuration start
 database connected
 class level configuration start
-Browser value from cmd/jenkins: chrome
+Browser value from cmd/jenkins: null
+Browser value from xml: null
+Browser value from properties: chrome
 browser launched and application opened
-[[ChromeDriver: chrome on windows (91695f05b24dc8d720bd408f5a4c009e)] -> xpath: //h1[text()='Welcome Admin']] is Displayed Admin Login successfully
+[[ChromeDriver: chrome on windows (44ab74d91f4f289e250cb72ef12af8cd)] -> xpath: //span[text()=' * Username or Password is incorrect. ']] from manufacturer
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Apr 09, 2026 9:09:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 146, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 146
+Apr 12, 2026 2:31:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
 ]]></system-err>
   </testcase>
-  <testcase name="verifyManuLogin" classname="com.scm.login_verifications.VerifyManufacturerLoginWithValidCredTest" time="0.0">
+  <testcase name="invalidRetailerloginsTest" classname="com.scm.login_verifications.InvalidLoginsTest" time="0.409">
+    <system-out><![CDATA[[[ChromeDriver: chrome on windows (44ab74d91f4f289e250cb72ef12af8cd)] -> xpath: //span[text()=' * Username or Password is incorrect. ']] from retailer
+done
+]]></system-out>
+  </testcase>
+  <testcase name="invalidlAdminoginsTest" classname="com.scm.login_verifications.InvalidLoginsTest" time="0.381">
+    <system-out><![CDATA[[[ChromeDriver: chrome on windows (44ab74d91f4f289e250cb72ef12af8cd)] -> xpath: //span[text()=' * Username or Password is incorrect. ']] admin
+]]></system-out>
+  </testcase>
+  <testcase name="verifyAdminLogin" classname="com.scm.login_verifications.VerifyAdminLoginWithValidCredTest" time="0.063">
     <system-out><![CDATA[browser closed...
 class level configuration start
-Browser value from cmd/jenkins: chrome
+Browser value from cmd/jenkins: null
+Browser value from xml: null
+Browser value from properties: chrome
+browser launched and application opened
+[[ChromeDriver: chrome on windows (c38e711ce821625725e88a28c7f1d8a9)] -> xpath: //h1[text()='Welcome Admin']] is Displayed Admin Login successfully
+]]></system-out>
+    <system-err><![CDATA[Apr 12, 2026 2:31:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+]]></system-err>
+  </testcase>
+  <testcase name="verifyManuLogin" classname="com.scm.login_verifications.VerifyManufacturerLoginWithValidCredTest" time="0.058">
+    <system-out><![CDATA[browser closed...
+class level configuration start
+Browser value from cmd/jenkins: null
+Browser value from xml: null
+Browser value from properties: chrome
 browser launched and application opened
 manufacturer is successfully logged in
 ]]></system-out>
-    <system-err><![CDATA[Apr 09, 2026 9:09:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 146, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 146
+    <system-err><![CDATA[Apr 12, 2026 2:31:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
 ]]></system-err>
   </testcase>
-  <testcase name="verifyRetailerLogin" classname="com.scm.login_verifications.VerifyRetailerLoginWithValidCredTest" time="0.047">
+  <testcase name="verifyRetailerLogin" classname="com.scm.login_verifications.VerifyRetailerLoginWithValidCredTest" time="0.042">
     <system-out><![CDATA[browser closed...
 class level configuration start
-Browser value from cmd/jenkins: chrome
+Browser value from cmd/jenkins: null
+Browser value from xml: null
+Browser value from properties: chrome
 browser launched and application opened
 Retailer is logged in successfully
 ]]></system-out>
-    <system-err><![CDATA[Apr 09, 2026 9:09:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 146, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 146
+    <system-err><![CDATA[Apr 12, 2026 2:31:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
 ]]></system-err>
   </testcase>
 </testsuite>
