@@ -15,8 +15,9 @@ public class VerifyRetailerLoginWithValidCredTest extends RetailersBaseClass {
 	public void verifyRetailerLogin() throws InterruptedException {
 		
 		String title = driver.getTitle();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.titleContains("Retailer"));
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//		wait.until(ExpectedConditions.titleContains("Retailer"));
+		Thread.sleep(3000);
 		Assert.assertTrue(title.contains("Retailer"));
 		System.out.println("Retailer is logged in successfully");
 //		String url = driver.getCurrentUrl();

@@ -16,8 +16,9 @@ public class VerifyManufacturerLoginWithValidCredTest extends ManufacturerBaseCl
 	public void verifyManuLogin() throws InterruptedException {
 		@Nullable
 		String title = driver.getTitle();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.titleContains("Manufacturer"));
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//		wait.until(ExpectedConditions.titleContains("Manufacturer"));
+		Thread.sleep(3000);
 		Assert.assertTrue(title.contains("Manufacturer"));
 		System.out.println("manufacturer is successfully logged in");
 	}
