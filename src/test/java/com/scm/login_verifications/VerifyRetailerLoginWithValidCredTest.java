@@ -19,8 +19,6 @@ public class VerifyRetailerLoginWithValidCredTest extends RetailersBaseClass {
 		wait.until(ExpectedConditions.titleContains("Retailer"));
 		Assert.assertTrue(title.contains("Retailer"));
 		System.out.println("Retailer is logged in successfully");
-//		String url = driver.getCurrentUrl();
-//		Assert.assertTrue(url.contains("retailer"));
-//		System.out.println("Retailer is logged in successfully");
+
 	}
 }
