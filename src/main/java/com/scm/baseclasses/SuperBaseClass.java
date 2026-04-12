@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
@@ -62,10 +63,13 @@ public class SuperBaseClass {
 		    driver = new EdgeDriver();
 
 		} else if (browser.equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
 
-		    WebDriverManager.firefoxdriver().setup();
+			FirefoxOptions options = new FirefoxOptions();
+			options.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe"); // 👈 IMPORTANT
+			options.addArguments("--headless");
 
-		    driver = new FirefoxDriver();  // no custom binary ❌
+			driver = new FirefoxDriver(options);
 
 		}
 
