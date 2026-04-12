@@ -10,7 +10,10 @@ public class VerifyRetailerLoginWithValidCredTest extends RetailersBaseClass {
 
 	@Test
 	public void verifyRetailerLogin() {
-		@Nullable
+		
+		String title = driver.getTitle();
+		Assert.assertTrue(title.contains("Retailer"));
+		System.out.println("Retailer is logged in successfully");
 		String url = driver.getCurrentUrl();
 		Assert.assertTrue(url.contains("retailer"));
 		System.out.println("Retailer is logged in successfully");
