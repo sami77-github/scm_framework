@@ -14,9 +14,8 @@ public class VerifyAdminLoginWithValidCredTest extends AdminBaseClass{
 	public void verifyAdminLogin() throws InterruptedException {
 		
 		String title = driver.getTitle();
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//		wait.until(ExpectedConditions.titleContains("Admin"));
-		Thread.sleep(3000);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.titleContains("Admin"));
 		Assert.assertTrue(title.contains("Admin"));
 		System.out.println(title+" is Displayed Admin Login successfully");
 	}
