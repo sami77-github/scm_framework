@@ -12,7 +12,7 @@ public class VerifyManufacturerLoginWithValidCredTest extends ManufacturerBaseCl
 	public void verifyManuLogin() throws InterruptedException {
 		@Nullable
 		String title = driver.getTitle();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		Assert.assertTrue(title.contains("Manufacturer"));
 		System.out.println("manufacturer is successfully logged in");
 	}
