@@ -66,7 +66,6 @@ public class SuperBaseClass {
 			WebDriverManager.firefoxdriver().setup();
 
 			FirefoxOptions options = new FirefoxOptions();
-			options.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe"); // 👈 IMPORTANT
 			options.addArguments("--headless");
 
 			driver = new FirefoxDriver(options);
