@@ -11,8 +11,8 @@ public class VerifyManufacturerLoginWithValidCredTest extends ManufacturerBaseCl
 	@Test
 	public void verifyManuLogin() {
 		@Nullable
-		String url = driver.getCurrentUrl();
-		Assert.assertTrue(url.contains("manufacturer"));
+		String title = driver.getTitle();
+		Assert.assertTrue(title.contains("Manufacturer"));
 		System.out.println("manufacturer is successfully logged in");
 	}
 }
