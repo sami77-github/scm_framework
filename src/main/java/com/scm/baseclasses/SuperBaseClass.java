@@ -5,6 +5,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -51,6 +52,12 @@ public class SuperBaseClass {
 		} else if (browser.equalsIgnoreCase("safari")) {
 			driver = new SafariDriver();
 		}
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless=new");
+		options.addArguments("--disable-gpu");
+		options.addArguments("--window-size=1920,1080");
+
+		driver = new ChromeDriver(options);
 		UtilityClassObject.setDriver(driver);
 		driver = UtilityClassObject.getDriver();
 		driver.manage().window().maximize();
