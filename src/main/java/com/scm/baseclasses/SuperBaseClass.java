@@ -2,7 +2,7 @@ package com.scm.baseclasses;
 
 import java.io.IOException;
 import java.time.Duration;
-
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -43,14 +43,30 @@ public class SuperBaseClass {
 				System.out.println("Browser value from properties: " + browser);
 			}
 		}
+		
+
 		if (browser.equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver();
+
+		    WebDriverManager.chromedriver().setup();
+
+		    ChromeOptions options = new ChromeOptions();
+		    options.addArguments("--headless=new");
+		    options.addArguments("--disable-gpu");
+		    options.addArguments("--window-size=1920,1080");
+
+		    driver = new ChromeDriver(options);
+
 		} else if (browser.equalsIgnoreCase("edge")) {
-			driver = new EdgeDriver();
+
+		    WebDriverManager.edgedriver().setup();
+		    driver = new EdgeDriver();
+
 		} else if (browser.equalsIgnoreCase("firefox")) {
-			driver = new FirefoxDriver();
-		} else if (browser.equalsIgnoreCase("safari")) {
-			driver = new SafariDriver();
+
+		    WebDriverManager.firefoxdriver().setup();
+
+		    driver = new FirefoxDriver();  // no custom binary ❌
+
 		}
 
 		UtilityClassObject.setDriver(driver);
