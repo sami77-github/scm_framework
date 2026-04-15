@@ -15,6 +15,6 @@ public class Java_Utility_True {
 	// Generate System date
 	public String getSystemDate() {
 		Date date = new Date();
-		return date.toString();
+		return date.toString().replace(" ", "").replace(":", "");
 	}
 }

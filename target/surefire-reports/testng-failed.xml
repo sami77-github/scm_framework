@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.scm.login_verifications.VerifyRetailerLoginWithValidCredTest">
+        <methods>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="retailerLogin"/>
+          <include name="retailerLogout"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="verifyRetailerLogin"/>
+          <include name="beforeSuitConfigMethod"/>
+        </methods>
+      </class> <!-- com.scm.login_verifications.VerifyRetailerLoginWithValidCredTest -->
+      <class name="com.scm.login_verifications.VerifyManufacturerLoginWithValidCredTest">
+        <methods>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="manufacturerLogout"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="manufacturerLogin"/>
+          <include name="verifyManuLogin"/>
+        </methods>
+      </class> <!-- com.scm.login_verifications.VerifyManufacturerLoginWithValidCredTest -->
+      <class name="com.scm.login_verifications.InvalidLoginsTest">
+        <methods>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="invalidManuloginsTest"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="invalidAdminLoginsTest"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="invalidRetailerloginsTest"/>
+        </methods>
+      </class> <!-- com.scm.login_verifications.InvalidLoginsTest -->
+      <class name="com.scm.login_verifications.VerifyAdminLoginWithValidCredTest">
+        <methods>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="verifyAdminLogin"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="adminLogout"/>
+          <include name="adminLogin"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+        </methods>
+      </class> <!-- com.scm.login_verifications.VerifyAdminLoginWithValidCredTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

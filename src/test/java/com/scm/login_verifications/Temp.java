@@ -1,16 +1,17 @@
 package com.scm.login_verifications;
+import org.testng.Assert;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import com.scm.baseclasses.AdminBaseClass;
 
-import java.io.IOException;
 
-import com.scm.generic_utilities.FileUtility_True;
+@Listeners(com.scm.listenerimppackage.ListenerImpClass.class)
+public class Temp extends AdminBaseClass {
 
-public class Temp {
-
-	public static void main(String[] args) throws IOException {
-		FileUtility_True fu = new FileUtility_True();
-		String Browser = fu.getDataFromProperties("browser");
-		String Url = fu.getDataFromProperties("url");
-		System.out.println(Browser);
-		System.out.println(Url);
+	@Test
+		public void test() {
+		String ExpectedName = "sami";
+		String ActualName = "samiuddin";
+		Assert.assertEquals(ActualName, ExpectedName);
 	}
 }
