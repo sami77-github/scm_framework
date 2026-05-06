@@ -18,5 +18,6 @@ public class VerifyAdminLoginWithValidCredTest extends AdminBaseClass{
 		wait.until(ExpectedConditions.titleContains("Admin"));
 		Assert.assertTrue(title.contains("Admin"));
 		System.out.println(title+" is Displayed Admin Login successfully");
+		System.out.println("Done");
 	}
 }
