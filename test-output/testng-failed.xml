@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.scm.login_verifications.TempTest">
+      <class name="com.scm.login_verifications.VerifyAdminLoginWithValidCredTest">
         <methods>
           <include name="afterSuiteConfigMethod"/>
+          <include name="verifyAdminLogin"/>
           <include name="afterClassConfigMethod"/>
           <include name="adminLogout"/>
           <include name="adminLogin"/>
           <include name="beforeClassConfigMethod"/>
           <include name="beforeSuitConfigMethod"/>
-          <include name="test"/>
         </methods>
-      </class> <!-- com.scm.login_verifications.TempTest -->
+      </class> <!-- com.scm.login_verifications.VerifyAdminLoginWithValidCredTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
